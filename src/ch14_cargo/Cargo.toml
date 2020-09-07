@@ -1,0 +1,49 @@
+[package]
+name = "ch14_cargo"
+version = "0.1.0"
+authors = ["kiorisyshen <kiorisyshen@gmail.com>"]
+edition = "2018"
+license = "MIT"
+
+[profile.dev]
+opt-level = 0
+
+[profile.release]
+opt-level = 3
+
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
+
+# Shell
+# cargo login abcdefghijklmnopqrstuvwxyz012345
+# cargo publish
+# cargo yank --vers 1.0.1
+# cargo yank --vers 1.0.1 --undo
+
+# [workspace]
+
+# members = [
+#     "adder",
+#     "add-one",
+# ]
+# [dependencies]
+# add-one = { path = "../add-one" }
+
+# Directories
+# ├── Cargo.lock
+# ├── Cargo.toml
+# ├── add-one
+# │   ├── Cargo.toml
+# │   └── src
+# │       └── lib.rs
+# ├── adder
+# │   ├── Cargo.toml
+# │   └── src
+# │       └── main.rs
+# └── target
+
+# Shell
+# cargo run -p adder  # use -p to specify package
+# cargo install ripgrep # install binary from crates.io
