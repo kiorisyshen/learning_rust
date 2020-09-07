@@ -1,0 +1,13 @@
+[package]
+name = "ch13-03-improving-our-io-project"
+version = "0.1.0"
+authors = ["kiorisyshen <kiorisyshen@gmail.com>"]
+edition = "2018"
+
+[lib]
+name="minigrep"
+path="src/lib.rs"
+
+# See more keys and their definitions at https://doc.rust-lang.org/cargo/reference/manifest.html
+
+[dependencies]
